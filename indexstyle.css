@@ -1,0 +1,59 @@
+body{
+    font-family: "funnel display", sans-serif;
+}
+
+img.slogo{
+    height: 25%;
+    width: auto;
+}
+
+.CollegeButt{
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "funnel display", sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.CollegeButt:hover{
+    transition-duration: 0.5s;
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+}
+
+.DeptButt{
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "funnel display", sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.DeptButt:hover{
+    transition-duration: 0.5s;
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+}
+
+.pages{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 600px){
+    .pages{
+        flex-direction: column;
+    }
+}
