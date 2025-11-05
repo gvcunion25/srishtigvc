@@ -1,8 +1,57 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
         <title>Srishti | College Related Issues</title>
+        <link rel="stylesheet" href="pagestyle.css">
     </head>
     <body>
-        <h1>IN THE WORKS</h1>
+        <?php include 'formprocess.php'; ?>
+        <center>
+        <div class="mainlogo">
+                <img class="slogo"src="Media/s LOGO.png" alt="Srishti Logo">
+            </div>
+        </center>
+        <div class="mainform">
+            <form action="formprocess.php" method="post">
+                <label><b>Name</b></label>
+                <input type="text" class="namearea" placeholder="Enter Your Name" name="iname">
+                <br>
+                <label><b>Department</b></label>
+                <select name="dept" id="dept" class="deptarea">
+                    <option value="Botany">Botany</option>
+                    <option value="Zoology">Zoology</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Maths">Maths</option>
+                    <option value="CS">Computer Science</option>
+                    <option value="Psychology">Psychology</option>
+                    <option value="Statisitics">Statisitics</option>
+                    <option value="English">English</option>
+                    <option value="Malayalam">Malayalam</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="Sanskrit">Sanskrit</option>
+                    <option value="History">History</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Commerece">Commerece</option>
+                </select>
+                <br>
+                <label><b>Year Of Study</b></label><br>
+                <input type="radio" name="yos" id="ugf">
+                <label>UG First Year</label><br>
+                <input type="radio" name="yos" id="ugs">
+                <label>UG Second Year</label><br>
+                <input type="radio" name="yos" id="ugt">
+                <label>UG Third Year</label><br>
+                <input type="radio" name="yos" id="pgf">
+                <label>PG First Year</label><br>
+                <input type="radio" name="yos" id="pgs">
+                <label>PG Second Year</label><br>
+            </form>
+        </div>
+        <?php echo $name; ?>
     </body>
 </html>
