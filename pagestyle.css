@@ -1,0 +1,46 @@
+body{
+    font-family: "funnel display", sans-serif;
+}
+
+img.slogo{
+    height: 25%;
+    width: auto;
+}
+
+.mainform{
+    margin: auto;
+    width: 50%;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid black;
+    display: block;
+}
+
+label{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.deptarea{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid black;
+    display: block;
+    background-color: white;
+}
+
+@media (max-width: 600px){
+    .mainform{
+        margin: auto;
+        width: 100%;
+    }
+    .deptarea{
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+    }
+}
