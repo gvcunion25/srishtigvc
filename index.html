@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +11,41 @@
     <body>
         <center>
             <div class="mainlogo">
-                <img class="slogo"src="s LOGO.png" alt="Srishti Logo">
+                <img class="slogo"src="srishti.png" alt="Srishti Logo">
             </div>
             <div class="welcomemess">
-                Welcome to<br>
+                Welcome to
                 <h1><b>Srishti Web Portal</b></h1>
             </div>
             <div class="pages">
-                <button class="CollegeButt" onclick="document.location='Collegeissues.html'">College Related Issues</button>
-                <button class="DeptButt">Department Related Issues</button>
+                <button class="Butt" onclick="document.location='Collegeissues.html'">SC/ST Cell</button>
+                <button class="Butt">Anti Ragging</button>
+                <button class="Butt">ICC</button>
+                <button class="Butt">GRIEVANCE REDRESSAL</button>
             </div>
         </center>
-    </body>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
 
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+            apiKey: "AIzaSyCNXMetIt-tMbibV3pnb51nxb_CUBNvcb0",
+            authDomain: "srishtigvc.firebaseapp.com",
+            projectId: "srishtigvc",
+            storageBucket: "srishtigvc.firebasestorage.app",
+            messagingSenderId: "335784786963",
+            appId: "1:335784786963:web:9f5b3a617ced9ba1a513e6",
+            measurementId: "G-8QN6ZDTT3V"
+            };
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+        </script>
+    </body>
 </html>

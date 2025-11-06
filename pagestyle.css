@@ -1,10 +1,16 @@
 body{
     font-family: "funnel display", sans-serif;
+    background-color: #0e1111;
+    opacity: 1;
+    background-size: 8px 8px;
+    background-image: repeating-linear-gradient(45deg, #1b1b1b 0, #1b1b1b 0.8px, #0e1111 0, #0e1111 50%);
+    color: #F2F0EF;
 }
 
 img.slogo{
-    height: 25%;
-    width: auto;
+    vertical-align: auto;
+    width: 30%;
+    height: auto;
 }
 
 .mainform{
@@ -17,6 +23,7 @@ input[type="text"]{
     padding: 12px;
     border: 2px solid black;
     display: block;
+    background-color: #F2F0EF;
 }
 
 label{
@@ -24,12 +31,34 @@ label{
     padding-top: 10px;
 }
 
+input[type="submit"]{
+    background-color: #F2F0EF;
+    border: none;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "funnel display", sans-serif;
+    margin: auto;
+    width: 100%;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    transition-duration: 0.5s;
+    background-color: #F1515E;
+    color: #F2F0EF;
+    border: 2px solid #000000;
+}
+
 .deptarea{
+    font-family: "funnel display", sans-serif;
     width: 100%;
     padding: 12px;
     border: 2px solid black;
     display: block;
-    background-color: white;
+    background-color: #F2F0EF;
 }
 
 @media (max-width: 600px){

@@ -1,23 +1,28 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
-        <title>Srishti | College Related Issues</title>
+        <title>Srishti | SC/ST Cell</title>
         <link rel="stylesheet" href="pagestyle.css">
     </head>
     <body>
         <?php include 'formprocess.php'; ?>
         <center>
         <div class="mainlogo">
-                <img class="slogo"src="Media/s LOGO.png" alt="Srishti Logo">
+                <img class="slogo"src="srishti.png" alt="Srishti Logo">
             </div>
         </center>
         <div class="mainform">
+            <h1>SC/ST Cell</h1>
+            <p>This cell is responsible for ensuring that the reservation policy is implemented effectively 
+                for Scheduled Castes and Scheduled Tribes (SCs and STs). The cell monitors admissions, 
+                recruitment, and other matters related to SCs and STs.</p>
             <form action="formprocess.php" method="post">
                 <label><b>Name</b></label>
-                <input type="text" class="namearea" placeholder="Enter Your Name" name="iname">
+                <input type="text" class="namearea" placeholder="Enter Your Name" id="iname">
                 <br>
                 <label><b>Department</b></label>
                 <select name="dept" id="dept" class="deptarea">
@@ -50,8 +55,9 @@
                 <label>PG First Year</label><br>
                 <input type="radio" name="yos" id="pgs">
                 <label>PG Second Year</label><br>
+                <br>
+                <input type="submit" name="submit" value="Submit">
             </form>
-            <input type="submit" name="submit" value="Submit">
         </div>
         <?php echo $name; ?>
     </body>
