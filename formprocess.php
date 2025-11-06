@@ -1,8 +1,12 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"]=="POST"){
+    $name = $_POST['iname'];
+    $dept = $_POST['dept'];
 
-<html>
-    <body>
-        Welcome <?php echo $_POST["iname"]; ?><br>
-        Your department is: <?php echo $_POST["dept"]; ?>
-    </body>
-</html>
-
+    if (empty($name)){
+        echo "No name given brother";
+    } else{
+        echo "response saved";
+    }
+}
+?>

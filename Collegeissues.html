@@ -19,9 +19,9 @@
             <p>This cell is responsible for ensuring that the reservation policy is implemented effectively 
                 for Scheduled Castes and Scheduled Tribes (SCs and STs). The cell monitors admissions, 
                 recruitment, and other matters related to SCs and STs.</p>
-            <form action="formprocess.php" method="post">
+            <form id="detailform">
                 <label><b>Name</b></label>
-                <input type="text" class="namearea" placeholder="Enter Your Name" id="iname">
+                <input type="text" class="namearea" placeholder="Enter Your Name" name="iname">
                 <br>
                 <label><b>Department</b></label>
                 <select name="dept" id="dept" class="deptarea">
@@ -57,7 +57,25 @@
                 <br>
                 <input type="submit" name="submit" value="Submit">
             </form>
+            <p id="sr"></p>
         </div>
-        <?php echo $name; ?>
+        <script>
+            document.getElementById("detailform").addEventListener("submit", function(e){
+                e.preventDefault(); //no refresh possible now hehe
+
+                const formData = new FormData(this);
+                fetch("formprocess.php", {
+                    method: "POST",
+                    body: formData
+                })
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById("sr").innerHTML = data;
+                })
+                .catch(error => {
+                console.error("Error:", error);
+                });
+            })
+        </script>
     </body>
 </html>
